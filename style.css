@@ -21,8 +21,39 @@ font-family: 'Lumanosimo';
     color:black;
     font-size: 14px;
 }
-.banner-infor{
-    background: url('./image/mac.jpg')
-    width: 100%
-    height: 500px 
+.banner-info{
+    background: url('./image/mac.jpg');
+    width: 100%;
+    height: 500px;
+    color:white;
+}
+
+.banner-btn{
+    padding: 13px;
+    border: none;
+    background:grey;
+    color:white;
+    border-radius: 5px;
+}
+
+.card{
+    /* h offse: khoảng cách ngang  */
+    /* v-offse: khoảng cách dọc */
+    /* blur: dộ nhòe  */
+    /* spread: khoảng cách từ bóng đến phần tử */
+    /* color: màu sắc   */
+    /* box-shadow: h-offse v-offse blur spread color */
+    box-shadow: 0px 0px 5px 0px rgb(68, 67, 67) ;
+    width: 300px;
+}
+
+.card-desc{
+    padding: 10px
+}
+
+.btn-contact{
+    background:grey;
+    /* padding: trên-dưới trái-phải */
+    padding :5px 100px;
+    border-radius: 4px;
 }
