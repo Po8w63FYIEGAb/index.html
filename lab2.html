@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link ref="stylesheet" href="./lab2.css">
+    <style>
+        #header{
+            /* height: 300 px; */
+        }
+
+        .logo{
+            background: red;
+            height: 100px;
+            width: 25%;
+            float: left;
+        }
+
+        .banner{
+            background: green;
+            height: 100px;
+            width: 75%;
+            float: right;
+        }
+
+        .header_menu{
+            background: grey;
+            clear: both;
+        }
+
+        .menu_item{
+            list-style-type:none;
+            border: 1px solid;
+            width: 100px;
+            float: left;
+        }
+
+        .sidebar{
+            background: yellow;
+            width: 30%;
+            height: 300px;
+            float: left;
+        }
+
+        .content{
+            background: grey;
+            width: 70%;
+            height: 300px;
+            float: right;
+        }
+        .menu{
+            padding-left: 0;
+            margin: 0 auto;
+            width: 70%
+        }
+
+        #main{
+            clear: both;
+        }
+
+        .box{
+            background: blueviolet;
+            width: 100px;
+            height: 100px;
+            border: 1px;
+            float: left;
+        }
+
+        .menu-v-item{
+            list-style: none;
+            background: violet;
+            width: 70px;
+            position: relative;
+        }
+
+        .menu-son-item{
+            list-style: none;
+            background: green;
+            width: 120px;
+        }
+
+        .menu-son{
+            background: aqua;
+            position: absolute;
+            top: 0;
+            left: 70px;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="header_top">
+            <div class="logo">Logo</div>
+            <div class="banner">Banner</div>
+        </div>
+        <div class="header_menu">
+            <!-- ul>(li.item-menu)*3 -->
+            <ul class="menu">
+                <li class="menu_item">Home</li>
+                <li class="menu_item">Product</li>
+                <li class="menu_item">Contact</li>
+            </ul>
+        </div>
+    </header>
+    <main id="main">
+        <section class="sidebar">
+            side bar 1
+            <ul class="menu-v">
+                <li class="menu-v-item">Home</li>
+                    <ul class="menu-son">
+                        <li class="menu-son-item">Home</li>
+                        <li class="menu-son-item">Home2</li>
+                        <li class="menu-son-item">Home3</li>
+                    </ul>
+                </li>
+                <li class="menu-v-item">Product</li>
+                <li class="menu-v-item">About</li>
+            </ul>
+        </section>
+        <section class="content">content
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+</body>
+</html>

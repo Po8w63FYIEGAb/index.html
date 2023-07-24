@@ -8,31 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css" />
+<link rel="stylesheet" href="./lab 1.css" />
 </head>
 <body>
     <!-- nav bar-->
     <div>
         <!--bên trái-->
         <div>
-            <h3 class="logo-text">LOGO</h3>
+            <h3 class="logo-text float-left">LOGO</h3>
         </div>
         <!--bên phải-->
-        <div>
-            <ul class="menu"style="list-style-type:none">
-                <li class="menu-item">
+        <div class="float-right">
+            <ul class="menu" style="list-style-type:none">
+                <li class="menu-item float-left">
                     <a class="menu-link" href="">ABOUT</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item float-left">
                     <a class="menu-link" href="">TEAM</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item float-left">
                     <a class="menu-link" href="">WORK</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item float-left">
                     <a class="menu-link" href="">PRICING</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item float-left">
                     <a class="menu-link" href="">CONTACT</a>
                 </li>
             </ul>
@@ -40,7 +40,7 @@
     </div>
 
     <!-- banner -->
-    <div>
+    <div class="clear-both">
         <!-- hình ảnh -->
         <div>
             <img src="./image/mac.jpg"
@@ -93,13 +93,13 @@
     </div>
 
     <!-- Our work -->
-    <div>
-        <div>
+    <div class="clear-both" style="background-color: rgb(161, 38, 38)"width="700px" >
+        <div class="float-right">
             <img src="./image/phone_buildings.jpg" 
-            height="150" 
+            width="380px" 
              alt="Hình ảnh chụp tòa nhà" />
         </div>
-        <div>
+        <div class="float-left">
             <div>
                 <h2>We know design</h2>
             </div>
@@ -108,107 +108,107 @@
                 <br>
                 tempor incididunt ut labore et dolore.
                 </p>
-            </div>
-            <div>
                 <a href="">View our work</a> 
             </div>
         </div>
     </div>
 
     <!-- Team -->
-    <div>
+    <div class="clear-both ">
         <div>
-            <div>
-                <h2>THE TEAM</h2>
-            </div>
-            <div>
-                <h3>The ones who runs this company</h3>
-            </div>
+            <h2>THE TEAM</h2>
+            <h3>The ones who runs this company</h3>
         </div>
         <div>
             <!-- John Doe -->
-            <div class="card">
-                <div class="card-img">
+            <div class="card float-left">
+                <div  class="card-img">
                     <img src="./image/team2.jpg" 
                     style="width: 100%"
-                     alt="John Doe" />
+                    alt="John Doe" />
                 </div>
                 <div class="card-desc">
-                    <h2 class="user-name">John Doe</h2>
-                    <p class="user-pos">CEO & Founder</p>
-                    <p class="user-desc">Phasellus eget enim eu lectus faucibus
+                    <div>
+                        <h2>John Doe</h2>
+                        <p>CEO & Founder</p>
+                    </div>
+                    <div>
+                        <p>Phasellus eget enim eu lectus faucibus
+                        <br>vestibulum. Suspendisse sodales
+                        <br>pellentesque elementum.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <!-- John Doe -->
+            <div class="card float-left">
+                <div  class="card-img">
+                  <img src="./image/team2.jpg" 
+                  style="width: 100%"
+                  alt="John Doe" />
+                </div>
+                <div class="card-desc">
+                  <div>
+                      <h2>John Doe</h2>
+                      <p>CEO & Founder</p>
+                  </div>
+                  <div>
+                      <p>Phasellus eget enim eu lectus faucibus
                       <br>vestibulum. Suspendisse sodales
                       <br>pellentesque elementum.
-                    </p>
-                    <p>
-                        <a class="btn-contact" href="">Contact</a>
-                    </p>
-                </div>
+                      </p>
+                  </div>
+                  <div>
+                      <a href="">Contact</a>
+                  </div>
+               </div>
             </div>
-
-            <!-- Anja Doe -->
-            <div>
-                <div>
-                    <img src="./image/team1.jpg"
-                    style="width: 100%"
-                     alt="Anja Doe" />
+            <!-- John Doe -->
+            <div class="card float-left">
+                <div  class="card-img">
+                  <img src="./image/team2.jpg" 
+                  style="width: 100%"
+                  alt="John Doe" />
                 </div>
-                <div>
-                    <h2>Anja Doe</h2>
-                    <p>Art Director</p>
-                    <p>Phasellus eget enim eu lectus faucibus
-                        <br>vestibulum. Suspendisse sodales
-                        <br>pellentesque elementum.
-                    </p>
-                    </div>
-                    <p>
-                        <a href="">Contact</a>
-                    </p>
-                </div>
-            </div>
-            <!-- Mike Ross -->
-            <div>
-                <div>
-                    <img src="./image/team3.jpg"
-                    style="width: 100%"
-                     alt="Mike Ross" />
-                </div>
-                <div>
+                <div class="card-desc">
                     <div>
-                        <h2>Mike Ross</h2>
-                        <p>Web Designer</p>
+                      <h2>John Doe</h2>
+                      <p>CEO & Founder</p>
                     </div>
                     <div>
-                        <p>Phasellus eget enim eu lectus faucibus
-                        <br>vestibulum. Suspendisse sodales
-                        <br>pellentesque elementum.
-                        </p>
+                      <p>Phasellus eget enim eu lectus faucibus
+                      <br>vestibulum. Suspendisse sodales
+                      <br>pellentesque elementum.
+                      </p>
                     </div>
                     <div>
-                        <a href="">Contact</a>
+                      <a href="">Contact</a>
                     </div>
                 </div>
             </div>
-            <!-- Dan Star -->
-            <div>
-                <div>
-                    <img src="./image/team4.jpg"
-                    style="width: 100%"
-                     alt="Dan Star" />
+            <!-- John Doe -->
+            <div class="card float-left">
+                <div  class="card-img">
+                  <img src="./image/team2.jpg" 
+                  style="width: 100%"
+                  alt="John Doe" />
                 </div>
-                <div>
+                <div class="card-desc">
                     <div>
-                        <h2>Dan Star</h2>
-                        <p>Designer</p>
+                      <h2>John Doe</h2>
+                      <p>CEO & Founder</p>
                     </div>
                     <div>
-                        <p>Phasellus eget enim eu lectus faucibus
-                        <br>vestibulum. Suspendisse sodales
-                        <br>pellentesque elementum.
-                        </p>
+                      <p>Phasellus eget enim eu lectus faucibus
+                      <br>vestibulum. Suspendisse sodales
+                      <br>pellentesque elementum.
+                      </p>
                     </div>
                     <div>
-                        <a href="">Contact</a>
+                      <a href="">Contact</a>
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@
     </div>
 
     <!-- Achievements-->
-    <div>
+    <div class="clear-both">
         <div>
             <div>
                 <h1>14<sup>+</sup></h1>
@@ -360,3 +360,11 @@
     </div>
 </body>
 </html>
+
+
+<!-- Thêm vào trong khi làm lab -->
+<div>
+    <input type="text" class="email">
+      <input type="text" class="name">
+</div>
+  
