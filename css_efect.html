@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+            /*  Bộ chọn con cháu, con cháu là p hoặc .child */
+            .parent p {
+              color: red;
+            }
+
+            .parent .child {
+              color: blue;
+            }
+            .parent div .chit {
+              color: yellow;
+            }
+            /*  bộ chọn con trực tiếp(con cấp 1) cha con > */
+            .parent > p {
+              background: #aaa;
+            }
+
+            .parent > .child {
+              background: green;
+            }
+
+            .parent > div .chit {
+              background: green;
+            }
+            .parent > div > p {
+            }
+            /*  anh chij em kế cận + */
+            /* div + p {
+              background: red;
+            }
+            .con1 + .con2 {
+              background: green;
+            } */
+            /* anh chij em chung ~ */
+            div ~ p {
+              background: red;
+            }
+            .btn {
+              /* background: blue; */
+              padding: 20px;
+              /* transition-delay: 0;
+              transition-duration: 3s;
+              transition-property: background;
+              transition-timing-function: ease; */
+              transition: all 2s ease;
+              position: relative;
+            }
+            .btn:hover {
+              background: red;
+              color: green;
+              /* font-size: 30px; */
+            }
+            .input:focus {
+              background: red;
+            }
+            .btn::first-letter {
+              font-size: 30px;
+            }
+            /* ::after ::before */
+            .btn:hover::after {
+              width: 100%;
+            }
+            .btn::after {
+              content: '';
+              position: absolute;
+              background: green;
+              bottom: 0;
+              left: 0;
+              width: 0px;
+              height: 30px;
+              transition: all 2s ease;
+            }
+
+            /*   .btn::before {
+              content: ' chen truoc';
+              color: yellow;
+            } */
+            /* transition: property duration timing-func delay
+      • transition-delay; thời gian delay
+      • transition-duration: thời gian chuyển đổi vis dụ opacity 0->1 mất 1s
+      • transition-property: tên thuộc tinhs: all tất cả , color
+      • transition-timing-function: ease: khởi dầu chậm kết thúc chậm, ease-in: vào chậm ra nhanh,  */
+            .box {
+              width: 50px;
+              height: 50px;
+              position: relative;
+              background: red;
+              /* left: 300px; */
+              /* animation-name: changePostion;
+              animation-duration: 4s;
+              animation-delay: 0;
+              animation-iteration-count: 1; infinite*/
+              /* animation-direction:normal; option */
+              /* animation-timing-function: ease;
+              animation-fill-mode: forwards; */
+              /* backwards | backwards */
+              animation: changePostion1 4s ease 0s infinite normal forwards;
+            /* } */
+            @keyframes changePostion {
+              /* 0% */
+              from {
+                left: 0;
+              }
+              /* 100% */
+              to {
+                left: 300px;
+              }
+            }
+
+            @keyframes changePostion1 {
+              /* 0% */
+              0% {
+                left: 0;
+              }
+              50% {
+                background: blue;
+              }
+              /* 100% */
+              100% {
+                left: 300px;
+                background: yellow;
+              }
+            }
+            /* • @keyframes : khởi tạo tên hiệu ứng và cách thay đổi giá trị thược tính
+            • animation-name: tên hiệu ứng
+      • animation-duration: thơig gian
+      • animation-delay: delay
+      • animation-iteration-count: số lần chạy
+      • animation-direction: cách chạy
+      • animation-timing-function: function chạy như transition
+      • animation-fill-mode: trang thái khi chạy xong: giữ nguyên thược tính hoặc là như cũ
+      • animation:name duration timming delay interactionc-count direction */
+    </style>
+  </head>
+
+  <body>
+    <button >
+      <span>Before</span>
+      CLick
+      <span>After</span>
+    </button>
+
+    <h1>Home page</h1>
+    <div class="box"></div>
+    <button class="btn">Button</button>
+    <input type="text" class="input" />
+    <!-- <div>
+      <p>Con1</p>
+    </div>
+    <p>Con2</p>
+    <p>Con3</p>
+
+    <div>
+      <p>Con4</p>
+    </div>
+    <p>Con5</p> -->
+    <!-- <div class="parent">
+      <p>Child1</p>
+      <p class="child">Child2</p>
+      <p>Child3</p>
+      <p class="child">Child4</p>
+      <p>Child5</p>
+      <div>
+        <p>Child6</p>
+        <p class="child">Child7</p>
+        <p>Child8</p>
+        <div>
+          <p class="chit">Chit</p>
+        </div>
+      </div>
+    </div>
+    <p class="child">Not child</p> -->
+    <!-- anh -->
+    <!-- <div>
+      <p>The 1</p>
+      <p>The 2</p>
+    </div> -->
+    <!--  anh 1 -->
+    <!-- <p>The 3</p> -->
+    <!-- anh2 -->
+    <!-- <p>The 4</p>
+    <div class="con1">
+      <p>The 1</p>
+    </div>
+    <p class="con2">The 5</p> -->
+  </body>
+</html>
