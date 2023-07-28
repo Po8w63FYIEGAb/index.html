@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <style>
+      @media only screen and (min-width: 768px) {
+      }
+      .col-1 {
+        width: 8.33%;
+      }
+      .col-2 {
+        width: 16.66%;
+      }
+      .col-3 {
+        width: 25%;
+      }
+      .col-4 {
+        width: 33.33%;
+      }
+      .col-5 {
+        width: 41.66%;
+      }
+      .col-6 {
+        width: 50%;
+      }
+      .col-7 {
+        width: 58.33%;
+      }
+      .col-8 {
+        width: 66.66%;
+      }
+      .col-9 {
+        width: 75%;
+      }
+      .col-10 {
+        width: 83.33%;
+      }
+      .col-11 {
+        width: 91.66%;
+      }
+      .col-12 {
+        width: 100%;
+      }
+
+      .title{
+        background: rgb(36, 158, 240);
+        padding: 30px;
+        font-size: 30px;
+      }
+
+      .sidebar{
+        background: rgb(36, 158, 240);
+      }
+      .content{
+        background: #ec243450
+      }
+      /* tất cả thẻ có class bắt đầu bằng col- có thuộc tính float */
+      [class*='col-'] {
+        float:left;
+      }
+
+      .row{
+        clear: both;
+      }
+
+      @media only screen and (max-width: 568px) {
+        .col-xs-1 {
+          width: 8.33%;
+        }
+        .col-xs-2 {
+          width: 16.66%;
+        }
+        .col-xs-3 {
+          width: 25%;
+        }
+        .col-xs-4 {
+          width: 33.33%;
+        }
+        .col-xs-5 {
+          width: 41.66%;
+        }
+        .col-xs-6 {
+          width: 50%;
+        }
+        .col-xs-7 {
+          width: 58.33%;
+        }
+        .col-xs-8 {
+          width: 66.66%;
+        }
+        .col-xs-9 {
+          width: 75%;
+        }
+        .col-xs-10 {
+          width: 83.33%;
+        }
+        .col-xs-11 {
+          width: 91.66%;
+        }
+        .col-xs-12{
+            width: 100%;
+        }
+      }
+      .menu-item{
+        list-style:none;
+        background: rgb(18, 199, 18);
+        width: 100px;
+        border-bottom: 1px solid white;
+        padding: 5px;
+        position: relative;
+        transition: all 1s ease;
+      }
+
+      .menu-item:hover{
+        background:pink;
+      }
+
+      .sub-menu-item{
+        list-style:none;
+        background: rgb(236, 236, 68);
+        width: 100px;
+        border-bottom: 1px solid white;
+        padding: 5px;
+        position: relative;
+        transition: all 1s ease;
+      }
+      .sub-menu{
+        position: absolute;
+        padding-left: 0;
+        left: 110px;
+        top:100px;
+        transition: all 1s ease;
+        pointer-events: none;
+        opacity:0; /* trong suốt */
+        visibility:hidden;
+      }
+      .menu-item:hover .sub-menu{
+        top: 0px;
+        opacity:1;
+        visibility:visible;
+        pointer-events: all;
+      }
+      .btn {
+        padding: 10px;
+        /* background:  rgb(18, 199, 18); */
+        border: none;
+        margin-left: 100px;
+        border-radius: 10px;
+        transition: all 2s ease;
+        position:relative;
+        z-index: 10;
+        overflow: hidden;
+      }
+      .btn::after{
+        content:'';
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background:  rgb(18, 199, 18);
+        top:0;
+        left:0;
+         /* border-radius: 10px; */
+         z-index: -1;
+        transition: all 2s ease;
+      }
+      .btn:hover::after {
+        width: 100%;
+        color: white;
+      }
+      .btn:hover {
+        /* translateX(): cach truc x bao nhieu */
+        /* translateY(): cach truc y bao nhieu */
+        /* rotate: 30deg: xoay bao nhieudo  */
+        /* scale: tang kich bao nhieu lan */
+        /* transform: translateY(-40px); */
+        /* rotate: -90deg; */
+        /* transform: rotate(90deg); */
+        /* transform: scale(2); */
+        /* scale: 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+        <div class="row">
+            <div class="col-12">
+                <p class="title">Chania</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="main row">
+        <section class="sidebar col-3 col-xs-12">
+            <ul class="menu">
+                <li class="menu-item">Home
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">Home</li>
+                    <li class="sub-menu-item">Home</li>
+                    <li class="sub-menu-item">Home</li>
+                    <li class="sub-menu-item">Home</li>
+                  </ul>
+                </li>
+                <li class="menu-item">Home
+                  <ul class="sub-menu">
+                    <li class="sub-menu-item">Home</li>
+                    <li class="sub-menu-item">Home</li>
+                    <li class="sub-menu-item">Home</li>
+                    <li class="sub-menu-item">Home</li>
+                  </ul>
+                </li>
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Home</li>
+                <li class="menu-item">Home</li>
+            </ul>
+        </section>
+        <section class="content col-9 col-xs-12">
+            <div>
+                <h1>The city</h1>
+                <button class="btn">Click</button>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>
