@@ -48,33 +48,71 @@
     padding-left: 130px;
 }
 .padding{
-    padding-left: 50px;
+    padding-left: 350px;
 }
 .navbar1{
     /* padding-left: 350px; */
     background-color: aqua;
+    /* position:absolute; */
 }
 .navbar1-item{
     list-style: none;
-    padding-left: 70px;
-    font-size: 14px;
+    /* padding-left: 30px; */
+    padding-right: 70px;
+    font-size: 12px;
+    font-weight:bolder;
     text-transform: uppercase;
-    position:;
+    position:relative;
+    /* border: 1px solid; */
 }
-.navbar1-sub-item{
+.link-item:hover {
+    color:blue;
+}
+.navbar1-sub{
     text-decoration: none; 
     text-transform: uppercase;
     list-style: none;
-    position:;
+    position:absolute;
     padding:0;
+    transition: all 1s ease;
+    top: 100px;
+    opacity:1;
+    visibility:visible;
+    pointer-events:none;
+    transition: all 1s ease;
 }
-.{
+.link-item{
+    text-decoration: none; 
+    transition: all 1s ease;
+}
+.sub-item{
+    padding:10px;
+    text-decoration-color: black;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    position: relative;
+    
+}
+.nav-link-item{
     text-decoration: none;
-    position:relative;
+    font-size: 12px;
+    transition: all 1s ease;
 }
-.nav-sub{
-    padding: 10 10 0 10;
+.navbar1-item:hover .navbar1-sub{
+    top: 18px;
+    opacity:1;
+    visibility:visible;
+    pointer-events: all;
 }
+.sub-item:hover{
+    background-color:blue;
+    color: black;
+}
+
+
+
+
 .menu-icon{
     padding-left: 100px;
 }
