@@ -1,0 +1,80 @@
+@media screen {
+    
+}
+.row{
+    clear: both;
+}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
+/* header trên */
+.header{
+    /*background-color: yellow */ 
+    padding-bottom:40px;
+    border-bottom: 1px solid rgb(158, 155, 155);
+}
+.call{
+    /* background-color:pink; */
+    padding-left: 150px;
+}
+.menu{
+    list-style: none;
+    position:relative;
+    right: 180px;
+    /* background-color:aquamarine; */
+}
+.menu-item{
+    padding: 0px 15px;
+    border-right:1px solid rgb(143, 135, 135);
+}
+.header-text{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* header dưới */
+.main_menu{
+    padding-top: 20px;
+    /* background-color:red; */
+}
+.nav{
+    /* padding-left: 100px; */
+    background-color:yellow;
+}
+.navbar-logo{
+    padding-left: 130px;
+}
+.padding{
+    padding-left: 50px;
+}
+.navbar1{
+    /* padding-left: 350px; */
+    background-color: aqua;
+}
+.navbar1-item{
+    list-style: none;
+    padding-left: 70px;
+    font-size: 14px;
+    text-transform: uppercase;
+    position:;
+}
+.navbar1-sub-item{
+    text-decoration: none; 
+    text-transform: uppercase;
+    list-style: none;
+    position:;
+    padding:0;
+}
+.{
+    text-decoration: none;
+    position:relative;
+}
+.nav-sub{
+    padding: 10 10 0 10;
+}
+.menu-icon{
+    padding-left: 100px;
+}
