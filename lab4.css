@@ -120,19 +120,20 @@ html,body{
     opacity: 1;
     pointer-events: all;
     visibility: visible;
-    top: 27px;
+    top: 9px;
+    transition: all 0.6s ease;
 }
 .dropdown-menu{
     position: absolute;
     padding: 15px !important;
     padding-top: 32px !important;
     padding-bottom: 0 !important;
-    top: 65px;
+    top:40px;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transition: all 1s ease;
-    left: -30px;
+    transition: all 0.6s ease;
+    left: -2px;
 
 }
 .nav-link:hover{
@@ -170,20 +171,107 @@ a{
 .col-lg-5 li a i:hover {
   color:blue;
 }
+
+/* banner */
 .banner_inner{
   background-image: linear-gradient(to bottom, #bebdbd46, #c0c0c016), url('./img/banner-bg.jpg');
-  min-height: 500px;
+  min-height: max(500px, 160vh);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.h3{
+.banner_content{
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   height: 500px;
   width: 100%;
+  /* background-color: aqua; */
 }
 .banner_content-wrap{
   width: 70%;
-  height: 800px;
+  max-width: 700px;
+  height:200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.banner_content-wrap h2{
+  color:white;
+  font-size: 62px;
+  text-align:center;
+}
+.banner_content-wrap p{
+  color:white;
+  margin:0;
+  /* background-color: aquamarine; */
+}
+.banner_content-wrap a{
+  font-size: 12px;
+  margin-top: 8%;
+  padding: 18px 28px;
+  color: black;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: bolder;
+  transition:all 0.8s ease;
+}
+.banner_content-wrap a:hover{
+  color:white;
+  background-color: blue;
+  transition:all 0.6s ease;
+}
+
+/* hot deals */
+.hot_deals_area{
+  padding: 70px 3%;
+}
+.hot_deals_area_wrap{
+  display: flex;
+  grid-gap: 35px;
+  /* background-color: aqua; */
+}
+.content{
+  /* background-color: aqua; */
+  background-image: linear-gradient(to bottom,#5a595986, #38373786), url('./img/deal1.jpg');
+  width:780px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition:all 1.5s ease;
+}
+.content h2{
+  color:white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+.content a{
+  color: white;
+}
+.content:hover{
+  background: linear-gradient(to bottom,#003bfc95,#003bfc95), url('./img/deal1.jpg'); 
+  transition:all 1.5s ease;
+}
+
+/* logo */
+.clients_logo_area{
+  padding-bottom: 5%;
+}
+.clients_slider{
+  display:grid;
+  grid-template-columns: repeat(5,auto);
+  justify-content:space-evenly;
+}
+.clients_slider img{
+  opacity:0.3;
+  transition: all 1 ease;
+}
+.clients_slider img:hover{
+  opacity:1;
+  transition: all 1 ease;
+}
+
+/* features products */
