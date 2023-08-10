@@ -5,6 +5,9 @@ html,body{
   padding: 0;
   margin: 0;
 }
+.row{
+  clear:both;
+}
 .header_area{
   padding: 0 10%;
   border-bottom: 1px solid rgb(233, 228, 228);
@@ -59,7 +62,7 @@ html,body{
   /* main menu */
 .container-fluid{
   display: flex;
-  padding: 0 5%;
+  padding: 10px 5%;
 }
 .navbar-toggler{
   display: none;
@@ -174,8 +177,8 @@ a{
 
 /* banner */
 .banner_inner{
-  background-image: linear-gradient(to bottom, #bebdbd46, #c0c0c016), url('./img/banner-bg.jpg');
-  min-height: max(500px, 160vh);
+  background-image: linear-gradient(to bottom, #44434346, #00000016), url('./img/banner-bg.jpg');
+  min-height: max(500px, 80vh);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -275,3 +278,66 @@ a{
 }
 
 /* features products */
+.main_title{
+  text-align: center;
+}
+.main_title h2{
+  font-size: 39px;
+}
+.main_item{
+  display: flex;
+  padding: 30px 0;
+  grid-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(5,auto);
+}
+.products{
+  /* background-color: aqua; */
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0px #aaa;
+}
+.f_p_item{
+  position:relative;
+}
+.p_icon{
+  position:absolute;
+  top:63%;
+  left: 67%;
+  transition:all 0.5s ease;
+  opacity:0;
+}
+.p_icon a{
+  padding:5px;
+}
+.p_icon i{
+  color:black;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  background-color:white;
+  padding: 10px;
+  transition:all 1s ease;
+}
+.f_p_item:hover .p_icon{
+  top:63%;
+  left: 50%;
+  transition:all 0.5s ease;
+  opacity:1;
+}
+.p_icon i:hover{
+  background-color:blue;
+  color:white;
+  transition:all 1s ease;
+}
+.cost{
+  text-align: center;
+}
+.cost h4{
+  color: black;
+  font-size: 18px;
+}
+.cost p{
+  font-weight:bolder;
+  font-size: 18px;
+  opacity: 0.6;
+}
