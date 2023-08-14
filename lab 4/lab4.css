@@ -1,0 +1,25 @@
+.header{
+    position: sticky;
+    z-index: 9999;
+    top:0px;
+}
+.carousel-indicators button{
+    width:10px !important;
+    height:10px !important;
+    border-radius: 10px !important;
+    border:none !important;
+    position:relative;
+    margin:20px !important;
+}
+.carousel-indicators button.active::after{
+    content:"";
+    position:absolute;
+    width: 18px;
+    height:18px;
+    /* background:red; */
+    top:-4px;
+    border: 1px solid white;
+    border-radius: 20px;
+    left: -4px;
+
+}
