@@ -7,68 +7,68 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./lab4.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="full-wrapper">
 <header id="header">
-    <nav class="navbar bg-light" aria-label="Light offcanvas navbar">
+    <nav class="navbar bg-light navbar-expand-sm p-md-4 p-sm-0" aria-label="Light offcanvas navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./imagess/logo.png" alt></a>
+          <a class="navbar-brand p-md-2 p-sm-0" href="#"><img src="./imagess/logo.png" alt></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight">
             <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"><img src="./imagess/logo.png" alt></h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 align-md-items-center align-items-sm-start">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 align-items-md-center align-items-sm-start">
                 <li class="nav-item">
                   <a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-uppercase" href="#">Shop</a>
+                  <a class="nav-link text-uppercase " href="#">Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-uppercase" href="#">About</a>
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link text-uppercase" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                   <a class="nav-link text-uppercase" href="#">Contact</a>
-                </li>
-                
-            </ul>
-            <div class="d-flex mt-3" role="search">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="#">Contact</a>
+                  </li>
+              </ul>
+              <div class="d-flex" >
                 <div class="header-social d-flex align-items-center">
-                    <a href="#" class="btn btn-outline-primary rounded-5"><i class="fab fa-twitter"></i></a>
-                    <a href="https://bit.ly/sai4ull" class="btn btn-outline-primary rounded-5"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-outline-primary rounded-5"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="btn btn-outline-primary rounded-5 btn-round-box d-flex justify-content-between align-items-center me-1"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary rounded-5 btn-round-box d-flex justify-content-between align-items-center me-1" href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary rounded-5 btn-round-box d-flex justify-content-between align-items-center" href="#"><i class="fab fa-pinterest-p"></i></a>
                 </div>
+
                 <div class="search">
-                    <ul class="d-flex align-items-center">
-                        <li class="list-unstyled">
-                            <div class="btn btn-outline-primary rounded-5">
+                    <ul class="d-flex align-items-center mb-0">
+                        <li class="list-unstyled me-1">
+                            <button class="btn btn-outline-primary rounded-5 btn-round-box d-flex justify-content-between align-items-center">
                                 <i class="fa fa-search"></i>
-                            </div>
+                            </button>
                         </li>
                         <li class="list-unstyled">
-                            <div class="card-stor">
-                                <img src="./imagess/favorit-card.png" alt>
+                            <div class="btn btn-outline-primary">
+                                <i class="fa fa-cart-shopping"></i>
                                 <span>0</span>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
+          </div>
         </div>
-    </nav>
-    
+      </nav>
+</header>
 <main>
+
     <div class="container-fluid">
         <div class="slider-area">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -88,20 +88,20 @@
                     <img src="./imagess/h1_hero3.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button> -->
               </div>
+              <div class="slider-area-info">
+                    <div class="">
+                        <h1 class="text-white text-capitalize text-center">fashion changing<br>always</h1>
+                        <button class="btn btn-success">shop Now</button>
+                    </div>
+              </div>
+        </div>
+    </div>
 
 
     <div class="popular-items pt-50">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-popular-items mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".1s">
@@ -111,7 +111,7 @@
                                 <span>Glasses</span>
                             </div>
                             <div class="favorit-items">
-                                <a href="shop.html" class="btn">Shop Now</a>
+                                <a href="shop.html" class="btn btn-outline-success">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -125,8 +125,9 @@
                                 <span>Watches</span>
                             </div>
                             <div class="favorit-items">
-                                <a href="shop.html" class="btn">Shop Now</a>
+                                <a href="shop.html" class="btn btn-outline-success">Shop Now</a>
                             </div>
+                       
                         </div>
                     </div>
                 </div>
@@ -139,7 +140,7 @@
                                 <span>Jackets</span>
                             </div>
                             <div class="favorit-items">
-                                <a href="shop.html" class="btn">Shop Now</a>
+                                <a href="shop.html" class="btn btn-outline-success">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -153,7 +154,7 @@
                                 <span>Clothes</span>
                             </div>
                             <div class="favorit-items">
-                                <a href="shop.html" class="btn">Shop Now</a>
+                                <a href="shop.html" class="btn btn-outline-success">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -168,38 +169,37 @@
 
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8 col-md-10">
-                    <div class="section-tittle mb-60 text-center wow fadeInUp" data-wow-duration="2s"
+                    <div class="section-tittle mb-60 text-center wow fadeInUp mb-5" data-wow-duration="2s"
                          data-wow-delay=".2s">
-                        <h2>new<br>arrival</h2>
+                        <h2 class="text-capitalize">new<br>arrival</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow shadow  text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".1s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival1.png" alt>
                             <div class="favorit-items">
-
                                 <img src="assets/img/gallery/favorit-card.png" alt>
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">Knitted Jumper</a></h3>
+                            <h3><a href="product_details.html" class="text-decoration-none text-dark">Knitted Jumper</a></h3>
                             <div class="rating mb-10">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                             <span>$ 30.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".2s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival2.png" alt>
@@ -211,18 +211,18 @@
                         <div class="popular-caption">
                             <h3><a href="product_details.html">Knitted Jumper</a></h3>
                             <div class="rating mb-10">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                             <span>$ 30.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".3s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival3.png" alt>
@@ -234,18 +234,18 @@
                         <div class="popular-caption">
                             <h3><a href="product_details.html">Knitted Jumper</a></h3>
                             <div class="rating mb-10">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                             <span>$ 30.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".4s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival4.png" alt>
@@ -257,18 +257,18 @@
                         <div class="popular-caption">
                             <h3><a href="product_details.html">Knitted Jumper</a></h3>
                             <div class="rating mb-10">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                             <span>$ 30.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".5s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival5.png" alt>
@@ -280,18 +280,18 @@
                         <div class="popular-caption">
                             <h3><a href="product_details.html">Knitted Jumper</a></h3>
                             <div class="rating mb-10">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                             <span>$ 30.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".6s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival6.png" alt>
@@ -303,18 +303,18 @@
                         <div class="popular-caption">
                             <h3><a href="product_details.html">Knitted Jumper</a></h3>
                             <div class="rating mb-10">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                             <span>$ 30.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".7s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival7.png" alt>
@@ -326,18 +326,18 @@
                         <div class="popular-caption">
                             <h3><a href="product_details.html">Knitted Jumper</a></h3>
                             <div class="rating mb-10">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                             <span>$ 30.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-arrival mb-50 text-center wow fadeInUp" data-wow-duration="1s"
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="single-new-arrival shadow mb-50 text-center wow fadeInUp" data-wow-duration="1s"
                          data-wow-delay=".8s">
                         <div class="popular-img">
                             <img src="assets/img/gallery/arrival8.png" alt>
@@ -361,9 +361,9 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="room-btn">
-                    <a href="catagori.html" class="border-btn">Browse More</a>
+            <div class="row justify-content-center my-5">
+                <div class="room-btn d-flex justify-content-center">
+                    <a href="catagori.html" class="btn btn-lg btn-outline-success">Browse More</a>
                 </div>
             </div>
         </div>
@@ -371,18 +371,14 @@
 
 
     <section class="collection section-bg2 section-padding30 section-over1 ml-15 mr-15"
-             data-background="assets/img/gallery/section_bg01.png">
-        <div class="container-fluid"></div>
-        <div class="row justify-content-center">
-            <div class="col-xl-7 col-lg-9">
-                <div class="single-question text-center">
-                    <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">collection houses our
-                        first-ever</h2>
-                    <a href="about.html" class="btn class=" wow fadeInUp" data-wow-duration="2s"
-                    data-wow-delay=".4s">About Us</a>
-                </div>
+>
+        <div class="collection-img">
+            <img src="./assets/img/gallery/section_bg01.png" class="w-100" alt="">
+            <div class="single-question ">
+                <h2 class="wow fadeInUp text-capitalize text-white" data-wow-duration="2s" data-wow-delay=".1s">collection houses our
+                    first-ever</h2>
+                <a href="about.html" class="btn btn-lg btn-outline-danger">About Us</a>
             </div>
-        </div>
         </div>
     </section>
 
@@ -397,7 +393,7 @@
                         </div>
                         <div class="location-details">
                             <p><a href="product_details.html">Established fact that by the<br> readable content</a></p>
-                            <a href="product_details.html" class="btn">Read More</a>
+                            <a href="product_details.html" class="btn btn-outline-danger">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -408,7 +404,7 @@
                         </div>
                         <div class="location-details">
                             <p><a href="product_details.html">Established fact that by the<br> readable content</a></p>
-                            <a href="product_details.html" class="btn">Read More</a>
+                            <a href="product_details.html" class="btn btn-outline-danger">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -475,11 +471,10 @@
         <div class="container-fluid ">
             <div class="row d-flex justify-content-between">
                 <div class="col-xl-3 col-lg-3 col-md-8 col-sm-8">
-                    <div class="single-footer-caption mb-50">
-                        <div class="single-footer-caption mb-30">
-
-                            <div class="footer-logo mb-35">
-                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt></a>
+                    <div class="single-footer-caption mb-5">
+                        <div class="single-footer-caption mb-3">
+                            <div class="footer-logo mb-3">
+                                <a href="index.html"><img src="./assets/img/logo/logo.png" alt></a>
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
@@ -557,12 +552,8 @@
                     <div class="col-xl-12 ">
                         <div class="footer-copy-right text-center">
                             <p>
-                                Copyright &copy;<script data-cfasync="false"
-                                                        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                                <script>document.write(new Date().getFullYear());</script>
-                                All rights reserved | This template is made with <i class="fa fa-heart"
-                                                                                    aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                Copyright &copy;Huyhq
+                               
                             </p>
                         </div>
                     </div>
@@ -572,19 +563,5 @@
     </div>
 
 </footer>
-
-<div class="search-model-box">
-    <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-btn">+</div>
-        <form class="search-model-form">
-            <input type="text" id="search-input" placeholder="Searching key.....">
-        </form>
-    </div>
-</div>
-
-
-<div id="back-top">
-    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
-</div>
 </body>
 </html>

@@ -1,25 +1,72 @@
-.header{
+#header{
     position: sticky;
     z-index: 9999;
     top:0px;
 }
 .carousel-indicators button{
-    width:10px !important;
-    height:10px !important;
+    width: 10px !important; 
     border-radius: 10px !important;
+    height: 10px !important;
     border:none !important;
-    position:relative;
-    margin:20px !important;
+    position: relative;
+    margin: 10px !important;
+}
+.btn-round-box{
+    width: 38px;
+    height: 38px;
 }
 .carousel-indicators button.active::after{
-    content:"";
-    position:absolute;
-    width: 18px;
-    height:18px;
-    /* background:red; */
-    top:-4px;
-    border: 1px solid white;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* background: red; */
+    top: -5px;
+    border:2px solid white;
     border-radius: 20px;
-    left: -4px;
+    left: -5px;
+}
+.popular-img{
+    position: relative;
+}
+.popular-items {
+    margin: 50px 0;
+}
 
+.popular-img img{
+    width: 100%;
+}
+.favorit-items{
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s all ease;
+}
+.img-cap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background: #aaaaaa90; */
+    background:linear-gradient(to top,#aaaaaa90,#aaaaaa40);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s all ease;
+}
+.img-cap span{
+    color: white;
+    font-size: 30px;
+}
+.popular-img:hover .img-cap{
+    opacity: 1;
+}
+.popular-img:hover .favorit-items{
+    opacity: 1;
 }
