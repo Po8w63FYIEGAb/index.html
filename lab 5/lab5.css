@@ -1,0 +1,82 @@
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar-brand{
+    padding-left:18%;
+}
+.offcanvas-body{
+    margin-left: 8%;
+}
+.navbar-nav{
+    padding-top:1%;
+    display:flex;
+    grid-gap:3%;
+}
+.body-text{
+    font-size: 18px;
+    color:black;
+}
+.header__nav__option{
+    padding-right:30%;
+    padding-top:1%;
+}
+.price{
+    margin-top:6%;
+}
+.drop-money:hover > .dropdown-menu{
+    display:block;
+}
+.banner-slide-item{
+    position:relative;
+}
+.banner-slide-img img{
+    max-width:100%;
+}
+.banner-slide-content{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    left: 15%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner__item{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.banner__item__text{
+    position:relative;
+    right:-50px;
+}
+.banner_item_pic {
+    display:flex;
+}
+.banner_item_pic img {
+    width:100%;
+    min-width:300px;
+}
+.banner__item__text a{
+    transition:all 0.6s ease;
+    position:relative;
+}
+.banner__item__text a::after{
+    transition:all 0.6s ease;
+    content:"";
+    width:100%;
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    background-color: red;
+    height: 2px;
+}
+.banner__item:hover .banner__item__text a::after{
+    background-color: blue;
+    width: 50%;
+}
