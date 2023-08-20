@@ -15,12 +15,59 @@ a{
     display:flex;
     grid-gap:3%;
 }
+.nav-links{
+    position:relative;
+    transition:all 0.8s ease;
+}
+.nav-links::after{
+    content:"";
+    width:0%;
+    position:absolute;
+    bottom:-10px;
+    left:0;
+    background-color: rgb(224, 24, 24);
+    height: 2px;
+    transition:all 0.5s ease;
+}
+.nav-items:hover .nav-links::after{
+    width:80%;
+}
+.nav-links{
+    padding-right:20px;
+}
+.pagess{
+    position:relative;
+}
+.dropdown-menus{
+    position:absolute;
+    top:60px;
+    z-index: 2;
+    background-color: black;
+    pointer-events: all;
+    transition: all 0.8s ease;
+    opacity:0.5;
+}
+.pagess:hover .dropdown-menus{
+    opacity:1;
+    top:40px;
+    z-index: 2;
+    pointer-events: all;
+    transition: all 0.8s ease;
+}
+.dropdown-menus li{
+    color:white;
+    margin:auto;
+    margin-left:-15%;
+    padding-top:6%;
+    padding:3%;
+}
+
 .body-text{
     font-size: 18px;
     color:black;
 }
 .header__nav__option{
-    padding-right:30%;
+    padding-right:25%;
     padding-top:1%;
 }
 .price{
