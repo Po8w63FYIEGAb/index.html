@@ -137,11 +137,11 @@ a{
 .banner__item--middle{
     position:absolute;
     top:38%;
-    left:11%;
+    left:10%;
 }
 .banner__item__text{
     position:relative;
-    right:-75px;
+    right:-65px;
 }
 .banner__item__text h2{
     font-size: 40px;
@@ -183,4 +183,15 @@ a{
 .banner__item--middle:hover .banner__item__text a::after{
     background-color: red;
     width: 50%;
+}
+
+
+.pc-1{
+    color:rgb(91, 88, 255);
+}
+.pc-2{
+    color:rgb(0, 41, 0);
+}
+.pc-3{
+    color:rgb(209, 102, 52);
 }
