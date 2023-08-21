@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .border-1 {
+      }
+      .product {
+        padding: 10px;
+        box-shadow: 0px 0px 10px #aaa;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .product-info {
+        margin-top: 10px;
+      }
+      .product-img__image {
+        max-width: 100%;
+        transition: all 1s ease;
+      }
+      .product-img__image:hover {
+        transform: translateY(-10px);
+        scale: 1.09;
+      }
+
+      .product-amortization {
+        font-size: 12px;
+        background: #aaaaaa60;
+        width: fit-content;
+        padding: 2px 3px;
+      }
+      .product-info__name {
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+      .product-info-price {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .product-info-price__value {
+        color: red;
+        font-weight: bold;
+      }
+      .product-info-price__sale {
+        background: #ff304230;
+        padding: 2px 5px;
+        color: red;
+        border-radius: 5px;
+      }
+      .products {
+        margin: 0 auto;
+      }
+      /*
+      .row{
+        display:flex;
+        flex-wrap:wrap;
+        margin://t
+      }
+        .product{
+          width:100px;
+          padding-left:20px;
+          => kich thuoc: 100 =10px;
+        }
+        [margin->border->padding->content->padding->border->margin]:border-box:box-sizing;
+
+        magin+border
+
+        products:width:300px;
+        sanpham ben: 500px
+      */
+    </style>
+  </head>
+  <body>
+    <div class="row products container">
+      <div class="col-md-3 col-sm-6 col-12 product-wrap">
+        <div class="product">
+          <p class="product-amortization">Trả góp 0%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12 border-1">
+        <div class="product">
+          <p class="product-amortization">Trả góp 50%</p>
+          <div class="product__img product-img">
+            <img
+              class="product-img__image"
+              src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/275435/oppo-a78-4g-green-thumb-600x600.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-info">
+            <a class="product-info__name" href="">Oppo A58</a>
+            <div class="product-info-price">
+              <p class="product-info-price__value" href="">30$</p>
+              <p class="product-info-price__sale" href="">-10%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
