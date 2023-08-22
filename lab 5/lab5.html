@@ -38,7 +38,7 @@
                             <a href="#" class="text-white text-uppercase pe-3">FAQs</a>
                         </div>
                         <li class="nav-item dropdown drop-money">
-                            <a class="nav-link dropdown-toggle text-white dropdown-money" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-linkss dropdown-toggle text-white dropdown-money" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               USD
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark">
@@ -218,286 +218,616 @@
               <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New Arrivals</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Hot Sales</button>
+              <button class="nav-link btn " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Hot Sales</button>
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">1</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">2</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">3</div>
-        </div>
-        <div class="row product__filter">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
-                        <span class="label">New</span>
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>Piqué Biker Jacket</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="row product__filter">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="./pictures/product-1.jpg">
+                                <span class="label">New</span>
+                                <img class="prod" src="./pictures/product-1.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Piqué Biker Jacket</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h5>$67.24</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                                <img class="prod" src="./pictures/product-2.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Piqué Biker Jacket</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                                <span class="label">Sale</span>
+                                <img class="prod" src="./pictures/product-3.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Multi-pocket Chest Bag</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex text">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item ">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                                <img class="prod" src="./pictures/product-4.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Diagonal Textured Cap</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
+                                <img class="prod" src="./pictures/product-5.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Lether Backpack</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
+                                <span class="label">Sale</span>
+                                <img class="prod" src="./pictures/product-6.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Ankle Boots</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                                <img class="prod" src="./pictures/product-7.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>T-shirt Contrast Pocket</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
+                                <img class="prod" src="./pictures/product-8.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Basic Flowing Scarf</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>Piqué Biker Jacket</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h5>$67.24</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                <div class="product__item sale">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
-                        <span class="label">Sale</span>
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>Multi-pocket Chest Bag</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h5>$43.48</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="row product__filter">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="./pictures/product-1.jpg">
+                                <span class="label">New</span>
+                                <img class="prod" src="./pictures/product-1.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Piqué Biker Jacket</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>Diagonal Textured Cap</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h5>$60.9</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>Lether Backpack</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <h5>$31.37</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                                <span class="label">Sale</span>
+                                <img class="prod" src="./pictures/product-3.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Multi-pocket Chest Bag</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex text">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                <div class="product__item sale">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
-                        <span class="label">Sale</span>
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>Ankle Boots</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
+                                <img class="prod" src="./pictures/product-5.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Lether Backpack</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h5>$98.49</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                                <img class="prod" src="./pictures/product-7.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>T-shirt Contrast Pocket</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>T-shirt Contrast Pocket</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <div class="row product__filter">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                                <img class="prod" src="./pictures/product-2.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Piqué Biker Jacket</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h5>$49.66</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item ">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                                <img class="prod" src="./pictures/product-4.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Diagonal Textured Cap</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
-                <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
-                        <ul class="product__hover">
-                            <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
-                            <li><a href="#"><img src="./pictures/compare.png" alt> <span>Compare</span></a></li>
-                            <li><a href="#"><img src="./pictures/search.png" alt></a></li>
-                        </ul>
-                    </div>
-                    <div class="product__item__text">
-                        <h6>Basic Flowing Scarf</h6>
-                        <a href="#" class="add-cart">+ Add To Cart</a>
-                        <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item sale">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
+                                <span class="label">Sale</span>
+                                <img class="prod" src="./pictures/product-6.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Ankle Boots</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-solid fa-star st"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h5>$26.28</h5>
-                        <div class="product__color__select">
-                            <label for="pc-1">
-                                <i class="fa-solid fa-circle pc-1"></i>
-                            </label>
-                            <label class="active black" for="pc-2">
-                                <i class="fa-solid fa-circle pc-2"></i>
-                            </label>
-                            <label class="grey" for="pc-3">
-                                <i class="fa-solid fa-circle pc-3"></i>
-                            </label>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
+                                <img class="prod" src="./pictures/product-8.jpg">
+                                <ul class="product__hover">
+                                    <li><a href="#"><img src="./pictures/heart.png" alt></a></li>
+                                    <li class="comp" ><a class="d-flex" href="#"><img src="./pictures/compare.png" alt> <span class="compare">Compare</span></a></li>
+                                    <li><a href="#"><img src="./pictures/search.png" alt></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6>Basic Flowing Scarf</h6>
+                                <a href="#" class="add-cart">+ Add To Cart</a>
+                                <div class="rating">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="d-flex">
+                                    <h5>$67.24</h5>
+                                    <div class="product__color__select">
+                                        <label for="pc-1">
+                                            <i class="fa-solid fa-circle pc-1"></i>
+                                        </label>
+                                        <label class="active black" for="pc-2">
+                                            <i class="fa-solid fa-circle pc-2"></i>
+                                        </label>
+                                        <label class="grey" for="pc-3">
+                                            <i class="fa-solid fa-circle pc-3"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -509,44 +839,52 @@
 
 <section class="categories spad">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
+        <div class="row d-grid contain">
+            <div class="col-lg-4">
                 <div class="categories__text">
-                    <h2>Clothings Hot <br/> <span>Shoe Collection</span> <br/> Accessories</h2>
+                    <div class="catog">
+                        <div class="cat_text_item">
+                            <h1 id="item1">Clothings Hot </h1>
+                            <h1>Shoe Collection</h1> 
+                            <h1 id="item1">Accessories</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="categories__hot__deal">
-                    <img src="img/product-sale.png" alt>
-                    <div class="hot__deal__sticker">
-                        <span>Sale Of</span>
-                        <h5>$29.99</h5>
+            <div class="col-lg-3">
+                <div class="hot_deals">
+                    <div class="categories__hot__deal">
+                        <img src="./pictures/product-sale.png" alt>
+                        <div class="hot__deal__sticker">
+                            <span>Sale Of</span>
+                            <h5>$29.99</h5>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 offset-lg-1">
                 <div class="categories__deal__countdown">
-                    <span>Deal Of The Week</span>
-                    <h2>Multi-pocket Chest Bag Black</h2>
-                    <div class="categories__deal__countdown__timer" id="countdown">
+                    <span class="deal-title">Deal Of The Week</span>
+                    <div class="categories__deal__countdown__timer d-grid" id="countdown">
+                        <h2 class="time-title">Multi-pocket Chest Bag Black</h2>
                         <div class="cd-item">
-                            <span>3</span>
+                            <span class="day">03  :</span>
                             <p>Days</p>
                         </div>
                         <div class="cd-item">
-                            <span>1</span>
+                            <span class="day">01 :</span>
                             <p>Hours</p>
                         </div>
                         <div class="cd-item">
-                            <span>50</span>
+                            <span class="day days">50 :</span>
                             <p>Minutes</p>
                         </div>
                         <div class="cd-item">
-                            <span>18</span>
+                            <span class="day days">18 </span>
                             <p>Seconds</p>
                         </div>
                     </div>
-                    <a href="#" class="primary-btn">Shop now</a>
+                    <a href="#" class="btn">Shop now</a>
                 </div>
             </div>
         </div>
@@ -558,13 +896,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="instagram__pic">
-                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-1.jpg"></div>
-                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-2.jpg"></div>
-                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-3.jpg"></div>
-                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-4.jpg"></div>
-                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-5.jpg"></div>
-                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-6.jpg"></div>
+                <div class="instagram__pic d-flex">
+                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-1.jpg"><img src="./pictures/instagram-1.jpg" alt="..."> </div>
+                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-2.jpg"><img src="./pictures/instagram-2.jpg" alt="..."></div>
+                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-3.jpg"><img src="./pictures/instagram-3.jpg" alt="..."></div>
+                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-4.jpg"><img src="./pictures/instagram-4.jpg" alt="..."></div>
+                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-5.jpg"><img src="./pictures/instagram-5.jpg" alt="..."></div>
+                    <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-6.jpg"><img src="./pictures/instagram-6.jpg" alt="..."></div>
                 </div>
             </div>
             <div class="col-lg-4">
