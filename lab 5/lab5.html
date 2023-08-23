@@ -212,13 +212,13 @@
     <div class="container">
         <ul class="nav nav-pills mb-3 justify-content-center mt-5" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Best Sellers</button>
+              <button class="nav-link active nav-text" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Best Sellers</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New Arrivals</button>
+              <button class="nav-link nav-text" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New Arrivals</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link btn " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Hot Sales</button>
+              <button class="nav-link btn nav-text " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Hot Sales</button>
             </li>
         </ul>
         <div class="tab-content" id="pills-tabContent">
@@ -894,7 +894,7 @@
 
 <section class="instagram spad">
     <div class="container">
-        <div class="row">
+        <div class="row d-flex inst">
             <div class="col-lg-8">
                 <div class="instagram__pic d-flex">
                     <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-1.jpg"><img src="./pictures/instagram-1.jpg" alt="..."> </div>
@@ -905,12 +905,12 @@
                     <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-6.jpg"><img src="./pictures/instagram-6.jpg" alt="..."></div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 ig_text">
                 <div class="instagram__text">
                     <h2>Instagram</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
-                    <h3>#Male_Fashion</h3>
+                    <h3 class="pt-5 MF">#Male_Fashion</h3>
                 </div>
             </div>
         </div>
@@ -924,16 +924,18 @@
             <div class="col-lg-12">
                 <div class="section-title">
                     <span>Latest News</span>
-                    <h2>Fashion New Trends</h2>
+                    <h2 class="pt-3 pb-5">Fashion New Trends</h2>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="row d-flex blog-photo">
+            <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="blog__item">
-                    <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg"></div>
+                    <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg">
+                        <img src="./pictures/blog-1.jpg" alt="...">
+                    </div>
                     <div class="blog__item__text">
-                        <span><img src="img/icon/calendar.png" alt> 16 February 2020</span>
+                        <span><img src="./pictures/calendar.png" alt> 16 February 2020</span>
                         <h5>What Curling Irons Are The Best Ones</h5>
                         <a href="#">Read More</a>
                     </div>
@@ -941,9 +943,11 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog__item">
-                    <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
+                    <div class="blog__item__pic2 set-bg" data-setbg="img/blog/blog-2.jpg">
+                        <img src="./pictures/blog-2.jpg" alt="...">
+                    </div>
                     <div class="blog__item__text">
-                        <span><img src="img/icon/calendar.png" alt> 21 February 2020</span>
+                        <span><img src="./pictures/calendar.png" alt> 21 February 2020</span>
                         <h5>Eternity Bands Do Last Forever</h5>
                         <a href="#">Read More</a>
                     </div>
@@ -951,9 +955,11 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog__item">
-                    <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
+                    <div class="blog__item__pic3 set-bg" data-setbg="img/blog/blog-3.jpg">
+                        <img src="./pictures/blog-3.jpg" alt="...">
+                    </div>
                     <div class="blog__item__text">
-                        <span><img src="img/icon/calendar.png" alt> 28 February 2020</span>
+                        <span><img src="./pictures/calendar.png" alt> 28 February 2020</span>
                         <h5>The Health Benefits Of Sunglasses</h5>
                         <a href="#">Read More</a>
                     </div>
@@ -966,65 +972,63 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="row">
+        <div class="row widget">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer__about">
-                    <div class="footer__logo">
-                        <a href="#"><img src="img/footer-logo.png" alt></a>
+                    <div class="footer__logo pb-4">
+                        <a href="#"><img src="./pictures/footer-logo.png" alt></a>
                     </div>
-                    <p>The customer is at the heart of our unique business model, which includes design.</p>
-                    <a href="#"><img src="img/payment.png" alt></a>
+                    <p class="text-white">The customer is at the heart of our unique business model, which includes design.</p>
+                    <a href="#"><img class="pays" src="./pictures/payment.png" alt></a>
                 </div>
             </div>
             <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
                 <div class="footer__widget">
-                    <h6>Shopping</h6>
-                    <ul>
-                        <li><a href="#">Clothing Store</a></li>
-                        <li><a href="#">Trending Shoes</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Sale</a></li>
+                    <h6 class="text-white widgetss1">Shopping</h6>
+                    <ul class="widgetss2">
+                        <li><a class="text-white" href="#">Clothing Store</a></li>
+                        <li><a class="text-white" href="#">Trending Shoes</a></li>
+                        <li><a class="text-white" href="#">Accessories</a></li>
+                        <li><a class="text-white" href="#">Sale</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2 col-md-3 col-sm-6">
                 <div class="footer__widget">
-                    <h6>Shopping</h6>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Payment Methods</a></li>
-                        <li><a href="#">Delivary</a></li>
-                        <li><a href="#">Return & Exchanges</a></li>
+                    <h6 class="text-white widgetss1">Shopping</h6>
+                    <ul class="widgetss2">
+                        <li><a class="text-white" href="#">Contact Us</a></li>
+                        <li><a class="text-white" href="#">Payment Methods</a></li>
+                        <li><a class="text-white" href="#">Delivary</a></li>
+                        <li><a class="text-white"href="#">Return & Exchanges</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                <div class="footer__widget">
-                    <h6>NewLetter</h6>
+                <div>
+                    <h6 class="text-white new">NewLetter</h6>
                     <div class="footer__newslatter">
-                        <p>Be the first to know about new arrivals, look books, sales & promos!</p>
-                        <form action="#">
-                            <input type="text" placeholder="Your email">
-                            <button type="submit"><span class="icon_mail_alt"></span></button>
+                        <p class="text-white pt-2">Be the first to know about new arrivals, look books, sales & promos!</p>
+                        <form class="pt-4 emails" action="#">
+                            <input type="email email_text" class="form-control" id="exampleInputEmail1" placeholder="Your email" aria-describedby="emailHelp">
+                            <a href="#"><i class="fa-regular envelop fa-envelope"></i></a>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="footer__copyright__text">
-
-                    <p>Copyright ©
+            <div class="col-lg-12 p-0 text-center">
+                <div class="footer__copyright__text pt-4">
+                    <p class="text-white">Copyright ©
                         <script>
                             document.write(new Date().getFullYear());
                         </script>
                         2020
-                        All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                                                            aria-hidden="true"></i> by <a
-                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                        All rights reserved | This template is made with 
+                        <i class="fa-regular text-danger fa-heart"></i> by 
+                        <a class="text-danger" href="https://colorlib.com" target="_blank">Colorlib</a>
                     </p>
-
                 </div>
             </div>
         </div>
