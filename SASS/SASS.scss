@@ -1,0 +1,63 @@
+// VIẾT TRƯỚC KHI SỬ DỤNG
+    // gán file scss vào - cách viết: abc.scss
+@import "./___.scss"; 
+    // gán file scss PARTIAL vào - cách viết: _abc.scss
+@import "./___"; 
+
+$color-danger:blue;
+$color-primary:#aaaa;
+
+// SỬ DỤNG LẠI NHỮNG THUỘC TÍNH & GIÁ TRỊ & QUY TẮC
+    // @mixin đi với @include 
+@mixin title-mixin{
+    color:$color-danger;
+    font-size: 30px;
+    background-color:$color-primary;
+    &:hover{
+        color:blue;
+    }
+}
+
+// KẾ THỪA MỘT SỐ QUY TẮC CỦA CSS( KO CÓ THUỘC TÍNH ĐỘNG )
+%title-share{
+    color:$color-danger;
+    font-size: 30px;
+    background-color:$color-primary;
+}
+
+// ÁP DỤNG
+.title{
+    @include title-mixin;
+    @extend %title-share;
+    // color:$color-danger;
+    // font-size: 30px;
+    // background-color:$color-primary;
+    transition:all 1s ease;
+    &:hover{
+        color:green;
+    }
+}
+
+.product-title{
+    color:$color-danger;
+}
+
+.navbar{
+    // navbar > li{}
+    & > li{
+        color:blue;
+    }
+
+    // navbar__img{}
+    &__img{
+        width:100%;
+    }
+
+    // navbar li{}
+    li{
+        color:red;
+        a{
+            color:red;
+        }
+    }
+}

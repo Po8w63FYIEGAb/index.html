@@ -1,0 +1,37 @@
+@import "./___.css";
+@import "./___.css";
+.title {
+  color: blue;
+  font-size: 30px;
+  background-color: rgba(170, 170, 170, 0.6666666667);
+}
+
+.title {
+  color: blue;
+  font-size: 30px;
+  background-color: rgba(170, 170, 170, 0.6666666667);
+  transition: all 1s ease;
+}
+.title:hover {
+  color: blue;
+}
+.title:hover {
+  color: green;
+}
+
+.product-title {
+  color: blue;
+}
+
+.navbar > li {
+  color: blue;
+}
+.navbar__img {
+  width: 100%;
+}
+.navbar li {
+  color: red;
+}
+.navbar li a {
+  color: red;
+}/*# sourceMappingURL=SASS.css.map */
