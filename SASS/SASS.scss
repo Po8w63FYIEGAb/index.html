@@ -1,8 +1,6 @@
 // VIẾT TRƯỚC KHI SỬ DỤNG
-    // gán file scss vào - cách viết: abc.scss
-@import "./___.scss"; 
-    // gán file scss PARTIAL vào - cách viết: _abc.scss
-@import "./___"; 
+    // @import "./___.scss"; gán file scss vào - cách viết: abc.scss
+    // @import "./___"; gán file scss PARTIAL vào - cách viết: _abc.scss
 
 $color-danger:blue;
 $color-primary:#aaaa;
