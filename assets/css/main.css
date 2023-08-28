@@ -1,0 +1,8 @@
+.main {
+  color: red;
+}
+@media screen and (max-width: 576px) {
+  .main {
+    color: blue;
+  }
+}/*# sourceMappingURL=main.css.map */

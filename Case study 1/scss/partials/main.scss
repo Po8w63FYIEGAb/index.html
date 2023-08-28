@@ -1,0 +1,10 @@
+@import "./front";
+@import "./variable";
+@import "./mixin";
+
+.main{
+    color:$color-danger;
+    @media screen and (max-width:$sm) {
+        color:blue;
+    }
+}
