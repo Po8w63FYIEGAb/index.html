@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../Case%20study%201/scss/partials/main.scss","../../Case%20study%201/scss/partials/_variable.scss","main.css"],"names":[],"mappings":"AAIA;EACI,UCLU;ACEd;AFII;EAFJ;IAGQ,WAAA;EEDN;AACF","file":"main.css"}
+{"version":3,"sources":["../../Case%20study%201/scss/main.scss","../../Case%20study%201/scss/partials/_variable.scss","main.css"],"names":[],"mappings":"AAIA;EACI,UCLU;ACEd;AFII;EAFJ;IAGQ,WAAA;EEDN;AACF","file":"main.css"}

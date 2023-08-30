@@ -1,6 +1,6 @@
-@import "./front";
-@import "./variable";
-@import "./mixin";
+@import "./partials/front";
+@import "./partials/variable";
+@import "./partials/mixin";
 
 .main{
     color:$color-danger;
